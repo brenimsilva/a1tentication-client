@@ -1,0 +1,21 @@
+<div class="login-form-container">
+<label class="mat-headline">Faça seu login</label>
+  <div class="input-container">
+    <mat-form-field [formGroup]="userForm" >
+      <mat-label>Email</mat-label>
+      <input type="text" matInput placeholder="Eg. a@a.com.br" required formControlName="UserEmail"/>
+      <mat-hint align="end">Min 5 caracteres</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="input-container">
+    <mat-form-field [formGroup]="userForm">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Eg. a@a.com.br" required formControlName="UserPassword"/>
+      <mat-hint align="end">Min 5 caracteres</mat-hint>
+    </mat-form-field>
+  </div>
+
+
+  <button class="btn-submit" mat-raised-button color="primary" (click)="login()">Login</button>
+</div>
